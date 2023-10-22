@@ -1,0 +1,52 @@
+- var submitText = 'Register'
+- var btnText = 'Sign in'
+div.signUp
+    form.signUp__form 
+        h1.signUp__title Register with your e-mail
+        div.signUp__box
+            label.signUp__label(for="first_name") First name 
+            input.signUp__input(
+                id="first_name"
+                type="text"
+                placeholder="Your first name"
+            )
+        div.signUp__box
+            label.signUp__label(for="second_name") Second name 
+            input.signUp__input(
+                id="second_name"
+                type="text"
+                placeholder="Your second name"
+            )
+        div.signUp__box
+            label.signUp__label(for="login") Login 
+            input.signUp__input(
+                id="login"
+                type="text"
+                placeholder="Your login"
+            )
+        div.signUp__box
+            label.signUp__label(for="email") Email 
+            input.signUp__input(
+                id="email"
+                type="email"
+                placeholder="Your email"
+            )
+        div.signUp__box
+            label.signUp__label(for="password") Password 
+            input.signUp__input(
+                id="password"
+                type="password"
+                placeholder="Your password"
+            )
+            button.signUp__btnPassword(type="button") Show password
+        div.signUp__box
+            label.signUp__label(for="password") Phone
+            input.signUp__input(
+                id="phone"
+                type="text"
+                placeholder="Your phone"
+            )
+        div.signUp__btnBox    
+            include ../../components/ButtonSubmit/buttonSubmit.pug
+            a(href="/login") 
+                include ../../components/Button/button.pug                          

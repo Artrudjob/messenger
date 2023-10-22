@@ -1,0 +1,25 @@
+@import url('../pages/SignUp/signUp.scss');
+@import url('../components/ButtonSubmit/buttonSubmit.scss');
+@import url('../components/Button/button.scss');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  background-color: #E9E9E9;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
