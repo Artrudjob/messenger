@@ -1,0 +1,25 @@
+- var submitText = 'Sign in'
+- var btnText = 'Not a member yet? Register now'
+
+div.login
+	form.login__form 
+		h1.login__title Sign in
+		div.login__box
+			label.login__label(for="login") Login 
+			input.login__input(
+				id="login"
+				type="text"
+				placeholder="Your login"
+			)
+		div.login__box
+			label.login__label(for="password") Password 
+			input.login__input(
+				id="password"
+				type="password"
+				placeholder="Your password"
+			)
+			button.login__btnPassword(type="button") Show password
+		div.login__btnBox    
+			include ../../components/ButtonSubmit/buttonSubmit.pug
+			a(href="/signUp") 
+				include ../../components/Button/button.pug  		
